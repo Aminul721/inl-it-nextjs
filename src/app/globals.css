@@ -44,6 +44,32 @@
     ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
 }
 
+:root {
+  color-scheme: light;
+  --color-text: #524f4f;
+  --color-heading: #0a0a0a;
+  --color-primary: #e82e4b;
+  --color-primary-hover: #c7243e;
+  --color-secondary: #2c2a2a;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f7f6f6;
+  --color-border: #e7e4e4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --color-text: #d2cdcd;
+    --color-heading: #ffffff;
+    --color-primary: #e82e4b;
+    --color-primary-hover: #ff5c75;
+    --color-secondary: #f0ebeb;
+    --color-surface: #121212;
+    --color-surface-muted: #1c1b1b;
+    --color-border: #343131;
+  }
+}
+
 * {
   box-sizing: border-box;
 }

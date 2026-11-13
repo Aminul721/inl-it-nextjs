@@ -6,7 +6,7 @@ const stack = [
 
 export default function HomePage() {
   return (
-    <main className="grid min-h-screen place-items-center p-6 sm:p-10">
+    <main className="col-auto grid min-h-screen">
       <section className="border-border bg-surface w-full max-w-2xl rounded-2xl border p-8 shadow-sm sm:p-12">
         <p className="text-primary text-sm font-medium tracking-wide">INL IT</p>
         <h1 className="text-h1 text-heading mt-3 font-semibold tracking-tight">

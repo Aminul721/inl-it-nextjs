@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/funnel-display";
+
+@theme {
+  --color-text: #524f4f;
+  --color-heading: #0a0a0a;
+  --color-primary: #e82e4b;
+  --color-primary-hover: #c7243e;
+  --color-secondary: #2c2a2a;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f7f6f6;
+  --color-border: #e7e4e4;
+
+  --text-xs: 1.2rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 1.4rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1.6rem;
+  --text-base--line-height: 1.5;
+  --text-button: 1.4rem;
+  --text-button--line-height: 1.2;
+  --text-h1: 6.2rem;
+  --text-h1--line-height: 1.1;
+  --text-h2: 4.8rem;
+  --text-h2--line-height: 1.15;
+  --text-h3: 3.2rem;
+  --text-h3--line-height: 1.2;
+  --text-h4: 2.2rem;
+  --text-h4--line-height: 1.25;
+  --text-h5: 2rem;
+  --text-h5--line-height: 1.3;
+  --text-h6: 1.6rem;
+  --text-h6--line-height: 1.5;
+  --text-display: 11.5rem;
+  --text-display--line-height: 0.95;
+}
+
+@theme inline {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-heading:
+    "Funnel Display Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
+}
+
+:where(h1, h2, h3, h4, h5, h6, button, [role="button"]) {
+  color: var(--color-heading);
+  font-family: var(--font-heading);
+}
+
+h1 {
+  font-size: var(--text-h1);
+  line-height: var(--text-h1--line-height);
+}
+
+h2 {
+  font-size: var(--text-h2);
+  line-height: var(--text-h2--line-height);
+}
+
+h3 {
+  font-size: var(--text-h3);
+  line-height: var(--text-h3--line-height);
+}
+
+h4 {
+  font-size: var(--text-h4);
+  line-height: var(--text-h4--line-height);
+}
+
+h5 {
+  font-size: var(--text-h5);
+  line-height: var(--text-h5--line-height);
+}
+
+h6 {
+  font-size: var(--text-h6);
+  line-height: var(--text-h6--line-height);
+}
+
+button,
+[role="button"] {
+  font-size: var(--text-button);
+  line-height: var(--text-button--line-height);
+}
+
+.heading-display {
+  font-size: var(--text-display);
+  line-height: var(--text-display--line-height);
+}

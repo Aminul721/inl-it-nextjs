@@ -15,7 +15,7 @@
 .headerWrap {
   margin-top: 2.4rem;
   border-radius: 2rem;
-  background: rgb(0 0 0 / 70%);
+  background: var(--color-header-bg);
   padding: 0 1.5rem;
   box-shadow: 0 1rem 1.5rem rgb(0 0 0 / 4%);
   backdrop-filter: blur(8px);
@@ -68,7 +68,7 @@
   padding: 0.8rem 1.6rem;
   border: 0;
   border-radius: 1rem;
-  color: #fff;
+  color: var(--color-header-text);
   background: transparent;
   font: inherit;
   text-decoration: none;
@@ -83,7 +83,7 @@
 .desktopDropdown:focus-within>a,
 .enterpriseDropdown:hover>button,
 .enterpriseDropdown:focus-within>button {
-  background: rgb(255 255 255 / 10%);
+  background: var(--color-header-hover);
 }
 
 .chevron {
@@ -106,7 +106,7 @@
   margin: 0;
   padding: 2rem 0;
   border-radius: 0 0 1.2rem 1.2rem;
-  background: rgb(0 0 0 / 84%);
+  background: var(--color-header-menu-bg);
   box-shadow: 0 0.4rem 0.8rem rgb(0 0 0 / 10%);
   backdrop-filter: blur(18px);
   opacity: 0;
@@ -132,7 +132,7 @@
   min-width: 23rem;
   columns: 2;
   column-gap: 3rem;
-  column-rule: 1px solid rgb(255 255 255 / 12%);
+  column-rule: 1px solid var(--color-header-menu-border);
   list-style: none;
 }
 
@@ -147,7 +147,7 @@
 
 .submenu a {
   position: relative;
-  color: #fff;
+  color: var(--color-header-text);
   font-size: 1.4rem;
   font-weight: 400;
   text-decoration: none;
@@ -207,7 +207,7 @@
   width: calc((100% - 4rem) / 3);
   overflow: hidden;
   border-radius: 1.2rem;
-  background: rgb(232 46 75 / 5%);
+  background: color-mix(in srgb, var(--color-primary) 5%, transparent);
   box-shadow: 0 0.2rem 0.4rem rgb(0 0 0 / 25%);
 }
 
@@ -227,7 +227,7 @@
 
 .productContent h6 {
   margin: 0;
-  color: #fff;
+  color: var(--color-header-text);
   font-family: var(--font-sans);
   font-size: 1.6rem;
   font-weight: 500;
@@ -236,7 +236,7 @@
 
 .productContent p {
   margin: 0.8rem 0;
-  color: rgb(255 255 255 / 80%);
+  color: var(--color-header-text-muted);
   font-size: 1.2rem;
   line-height: 1.4;
 }
@@ -245,7 +245,7 @@
 .button {
   border-radius: 2rem;
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-on-primary);
   font-family: var(--font-sans);
   font-size: 1.4rem;
   font-weight: 500;
@@ -291,13 +291,13 @@
 
 .offerButton {
   display: none;
-  background: rgb(255 255 255 / 10%);
+  background: var(--color-header-hover);
 }
 
 .menuToggle {
   display: none;
   border: 0;
-  color: #fff;
+  color: var(--color-header-text);
   background: transparent;
   cursor: pointer;
 }
@@ -422,7 +422,7 @@
   border: 0;
   border-radius: 0.3rem;
   background: var(--color-primary);
-  color: #fff;
+  color: var(--color-on-primary);
   cursor: pointer;
 }
 

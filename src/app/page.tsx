@@ -7,7 +7,7 @@ const stack = [
 export default function HomePage() {
   return (
     <main className="col-auto grid min-h-screen">
-      <section className="border-border bg-surface w-full max-w-2xl rounded-2xl border p-8 shadow-sm sm:p-12">
+      <section className="border-border bg-surface w-full max-w-2xl rounded-2xl border p-8 shadow-sm sm:p-12 opacity-0">
         <p className="text-primary text-sm font-medium tracking-wide">INL IT</p>
         <h1 className="text-h1 text-heading mt-3 font-semibold tracking-tight">
           Your app foundation is ready.

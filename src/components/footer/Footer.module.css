@@ -1,0 +1,430 @@
+.footer {
+  position: relative;
+  background-color: #050505;
+  background-image: url("https://inleadsit.com.my/wp-content/uploads/2025/08/footer-bg-scaled.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  padding-top: 10rem;
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 136rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* =========================================
+   Top CTA: Let's talk now + Circle Badge
+   ========================================= */
+.ctaWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 8rem;
+  text-align: center;
+}
+
+.ctaTitle {
+  font-family: var(--font-heading), sans-serif;
+  font-size: clamp(5rem, 9vw, 12rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #ffffff 10%, #7e7a7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ctaTitle span {
+  display: block;
+}
+
+.circleBadge {
+  position: absolute;
+  right: calc(50% - 28rem);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13rem;
+  height: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 5;
+}
+
+.circleBadge:hover {
+  transform: translateY(-50%) scale(1.06);
+}
+
+.circleSpin {
+  width: 100%;
+  height: 100%;
+  animation: spin 15s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circleSpin img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.circleArrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.2rem;
+  height: 1.8rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.circleArrow svg {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =========================================
+   Columns Grid
+   ========================================= */
+.grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr 0.8fr 1.2fr;
+  gap: 3.5rem;
+  padding-bottom: 6rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Brand Column */
+.brandLogo {
+  display: inline-block;
+  margin-bottom: 2rem;
+  max-width: 18rem;
+}
+
+.brandLogo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.brandDesc {
+  color: #a8a4a4;
+  font-size: 1.35rem;
+  line-height: 1.65;
+  margin: 0 0 2.5rem 0;
+  max-width: 30rem;
+}
+
+.profileBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: var(--color-primary);
+  color: var(--color-on-primary, #fff);
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  font-size: 1.35rem;
+  font-weight: 500;
+  text-decoration: none;
+  width: fit-content;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.profileBtn:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-2px);
+}
+
+.profileBtn svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  flex-shrink: 0;
+}
+
+/* Nav Columns */
+.colTitle {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 2rem 0;
+  letter-spacing: -0.01em;
+}
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.linkList li a {
+  color: #a8a4a4;
+  font-size: 1.35rem;
+  text-decoration: none;
+  transition: color 0.25s ease, transform 0.25s ease;
+  display: inline-block;
+}
+
+.linkList li a:hover {
+  color: #fff;
+  transform: translateX(3px);
+}
+
+/* Addresses Column */
+.addressCard {
+  margin-bottom: 2rem;
+}
+
+.countryHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.countryHeader img {
+  width: 2.4rem;
+  height: 2.4rem;
+  object-fit: contain;
+}
+
+.countryName {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.companyName {
+  font-size: 1.3rem;
+  color: #d1cdcd;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.companyReg {
+  font-size: 1.2rem;
+  color: #8b8787;
+  margin-bottom: 0.8rem;
+}
+
+.addressText {
+  color: #a8a4a4;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  text-decoration: none;
+  display: block;
+  transition: color 0.25s ease;
+}
+
+.addressText:hover {
+  color: #fff;
+}
+
+.contactSection {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contactSubtitle {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.contactList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contactList li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  color: #a8a4a4;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.contactList li a:hover {
+  color: #fff;
+}
+
+.contactList svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+/* =========================================
+   Bottom Bar
+   ========================================= */
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.copyright {
+  color: #7a7676;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialList li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: #c9c5c5;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.socialList li a:hover {
+  background: var(--color-primary);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.socialList svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* =========================================
+   Responsive Breakpoints
+   ========================================= */
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+  }
+
+  .circleBadge {
+    right: calc(50% - 24rem);
+    width: 11rem;
+    height: 11rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer {
+    padding-top: 6rem;
+  }
+
+  .ctaWrapper {
+    margin-bottom: 5rem;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .circleBadge {
+    position: static;
+    transform: none;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .circleBadge:hover {
+    transform: scale(1.05);
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem 2rem;
+  }
+
+  .col:first-child {
+    grid-column: span 2;
+  }
+
+  .brandDesc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer {
+    padding-top: 4.5rem;
+    padding-bottom: 3rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .col:first-child {
+    grid-column: auto;
+  }
+
+  .bottomBar {
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .socialList {
+    justify-content: center;
+  }
+}

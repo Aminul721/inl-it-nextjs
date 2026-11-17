@@ -1,0 +1,146 @@
+/* Hero Section Styles */
+.sectionHero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.sectionHeroWrap {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 900px;
+  --padding-y: 5rem;
+}
+
+.sectionHeroBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.videoSize {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroSlider {
+  width: 100%;
+  height: 100%;
+}
+
+.sectionHeroContentwrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding-inline: 1.5rem;
+  padding-block: var(--padding-y);
+  position: relative;
+  z-index: 10;
+}
+
+.sectionHeroContentTitle {
+  font-family: var(--font-heading), "Funnel Display Variable", "Funnel Display", sans-serif;
+  font-size: 7.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.05;
+  text-align: center;
+  color: #fff;
+  /* opacity: 0; */
+  transform: scale(0.9);
+  transition: transform 1200ms ease, opacity 1200ms ease;
+  user-select: none;
+}
+
+.sectionHeroContentTitle span {
+  color: var(--color-primary, #e82e4b);
+}
+
+/* Swiper active slide animations for regular and loop duplicated slides */
+:global(.swiper-slide-active) .sectionHeroContentTitle,
+:global(.swiper-slide-duplicate-active) .sectionHeroContentTitle,
+:global(.swiper-slide-active) :global(.section-hero-content-title),
+:global(.swiper-slide-duplicate-active) :global(.section-hero-content-title) {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  transition-delay: 300ms;
+}
+
+/* AI animated badge */
+.aiMark {
+  background-color: var(--color-primary, #e82e4b);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.2rem;
+  line-height: 0.9;
+  border-radius: 4px;
+  vertical-align: middle;
+  font-size: 0.85em;
+  font-weight: 900;
+  animation: zoomInOut 3s ease-in-out infinite;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive queries */
+@media (max-width: 1200px) {
+  .sectionHeroWrap {
+    height: 700px;
+    --padding-y: 3rem;
+  }
+
+  .sectionHeroContentTitle {
+    font-size: 5.2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .sectionHeroWrap {
+    height: 550px;
+    --padding-y: 4rem;
+  }
+
+  .sectionHeroContentwrap {
+    justify-content: flex-end;
+  }
+
+  .sectionHeroContentTitle {
+    font-size: 4.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionHeroWrap {
+    height: 530px;
+    --padding-y: 5.5rem;
+  }
+
+  .sectionHeroContentTitle {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+}

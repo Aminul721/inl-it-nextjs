@@ -236,9 +236,6 @@ export default function Header() {
                 <li>
                   <a href="/portfolio/">Portfolio</a>
                 </li>
-                <li>
-                  <a href="/figma-to-wordpress/">Figma to WordPress</a>
-                </li>
               </ul>
             </nav>
 
